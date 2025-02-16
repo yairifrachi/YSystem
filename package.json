@@ -1,0 +1,41 @@
+{
+  "name": "y-system",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm start --prefix apps/y-system-server\" \"npm run dev --prefix apps/y-system-client\""
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.12",
+    "concurrently": "^8.0.0"
+  },
+  "workspaces": [
+    "apps/y-system-server",
+    "apps/y-system-client",
+    "lib"
+  ],
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.749.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.4",
+    "@mui/material": "^6.4.4",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-http-context": "^1.2.0",
+    "formik": "^2.4.6",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1",
+    "perm": "^1.0.0",
+    "react-dom": "^19.0.0",
+    "sharp": "^0.33.5",
+    "ts-node": "^10.9.2",
+    "twilio": "^5.4.4",
+    "typescript": "^5.7.3",
+    "yup": "^1.6.1"
+  }
+}

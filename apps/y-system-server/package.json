@@ -1,0 +1,15 @@
+{
+  "name": "y-system-server",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc --watch --project tsconfig.app.json",
+    "build": "tsc --project tsconfig.app.json",
+    "start": "npm run build && node ../../dist/apps/y-system-server/server.js"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17"
+  },
+  "dependencies": {
+    "express-http-context": "^1.2.4"
+  }
+}

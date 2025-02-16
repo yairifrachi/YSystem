@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "outDir": "../../dist/apps/y-system-client"
+  },
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+  
+}
